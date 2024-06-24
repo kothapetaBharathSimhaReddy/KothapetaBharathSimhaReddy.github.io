@@ -1,7 +1,265 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharath Simha Reddy Kothapeta - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-poppins">
+    <!-- Header Section -->
+    <header class="bg-indigo-600 fixed w-full top-0 z-50 shadow-lg">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <!-- Logo/Brand Name -->
+            <a class="text-white text-2xl font-bold" href="#">Bharath Simha Reddy Kothapeta</a>
+            <!-- Navigation Menu for larger screens -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a class="text-white hover:text-yellow-400" href="#about">About</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#skills">Skills</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#projects">Projects</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#certifications">Certifications</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#contact">Contact</a></li>
+            </ul>
+            <!-- Menu toggle button for smaller screens -->
+            <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Navigation Menu -->
+        <div class="hidden md:hidden bg-indigo-600" id="menu">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a class="text-white hover:text-yellow-400" href="#about">About</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#skills">Skills</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#projects">Projects</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#certifications">Certifications</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mt-20">
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white text-center shadow-lg animate__animated animate__fadeIn">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-indigo-600 mb-6">About Me</h1>
+                <p class="text-lg text-gray-700 leading-relaxed">Hello, I am Bharath Simha Reddy Kothapeta, a current MS Computer Science student at Northwest Missouri State University. I hold a B.Tech in Electronics and Communication Engineering from Jawaharlal Nehru Technological University Hyderabad. My primary interest lies in AI/ML Engineering, where I aspire to harness my expertise to create groundbreaking solutions that benefit society. I am deeply passionate about working on projects that utilize AI/ML technologies and am committed to staying abreast of the latest developments in the field.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-50 text-center shadow-lg animate__animated animate__fadeIn">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-indigo-600 mb-6">Technical Skills</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fab fa-python text-6xl text-indigo-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold">Python</h2>
+                        <p class="text-gray-700">Proficient in Python programming.</p>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fab fa-html5 text-6xl text-red-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold">HTML</h2>
+                        <p class="text-gray-700">Skilled in creating structured web pages using HTML.</p>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fab fa-css3-alt text-6xl text-blue-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold">CSS</h2>
+                        <p class="text-gray-700">Adept in styling web pages with CSS to create visually appealing designs.</p>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fab fa-java text-6xl text-yellow-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold">Java</h2>
+                        <p class="text-gray-700">Beginner Level.</p>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fab fa-cuttlefish text-6xl text-green-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold">C</h2>
+                        <p class="text-gray-700">Experienced in C programming for system development.</p>
+                    </div>
+                    <!-- Skill Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <i class="fas fa-microchip text-6xl text-teal-600 mb-4"></i>
+                        <h2 class="text-xl font-semibold">Embedded C</h2>
+                        <p class="text-gray-700">Skilled in Embedded C programming for microcontroller-based applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white text-center shadow-lg animate__animated animate__fadeIn">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-indigo-600 mb-6">Projects</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project Item -->
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <h2 class="project-title text-xl font-semibold">Gesture Control Home Automation</h2>
+                        <p class="project-description text-gray-700">A gesture control home automation system that enables users to control household devices with simple hand movements.</p>
+                    </div>
+                    <!-- Project Item -->
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <h2 class="project-title text-xl font-semibold">Vehicle Movement Street Light With Light Sensing ATMega</h2>
+                        <p class="project-description text-gray-700">Automatic Street Light Controller Circuit using LDR and Relay.</p>
+                    </div>
+                    <!-- Project Item -->
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <h2 class="project-title text-xl font-semibold">Instagram Clone</h2>
+                        <p class="project-description text-gray-700">An Instagram clone built using HTML and CSS, replicating the visual design and layout of the popular social media platform.</p>
+                    </div>
+                    <!-- Project Item -->
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <h2 class="project-title text-xl font-semibold">Real Estate Price Prediction</h2>
+                        <p class="project-description text-gray-700">A real estate price prediction system using machine learning algorithms to forecast property prices based on various features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 bg-gray-50 text-center shadow-lg animate__animated animate__fadeIn">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-indigo-600 mb-6">Certifications</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-medal text-6xl text-indigo-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Python Basics</h2>
+                        <a href="Certification/Basics of Python.pdf" class="btn btn-indigo-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-trophy text-6xl text-green-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Data Analytics Workshop</h2>
+                        <a href="Certification/Data Analytics WorkShop.pdf" class="btn btn-green-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-certificate text-6xl text-yellow-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Python Intermediate</h2>
+                        <a href="Certification/GUVI-Python.pdf" class="btn btn-yellow-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-award text-6xl text-red-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Infosys Power Programmer</h2>
+                        <a href="Certification/Infosys Power Programmer.pdf" class="btn btn-red-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-crown text-6xl text-blue-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">IOT Beginner</h2>
+                        <a href="Certification/Introduction to IOT.pdf" class="btn btn-blue-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-medal text-6xl text-indigo-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">R Programming Beginner</h2>
+                        <a href="Certification/Introduction to R.pdf" class="btn btn-indigo-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-trophy text-6xl text-green-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">JavaScript and React JS BootCamp</h2>
+                        <a href="Certification/JS & React Js.pdf" class="btn btn-green-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-certificate text-6xl text-yellow-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Python Advanced</h2>
+                        <a href="Certification/Python by Google .pdf" class="btn btn-yellow-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-award text-6xl text-red-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Data Science BootCamp</h2>
+                        <a href="Certification/Python-Data Science.pdf" class="btn btn-red-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-crown text-6xl text-blue-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Machine Learning BootCamp</h2>
+                        <a href="Certification/Python for Machine Learning.pdf" class="btn btn-blue-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-medal text-6xl text-indigo-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">Data Visualization Workshop</h2>
+                        <a href="Certification/Python Data Visualization.pdf" class="btn btn-indigo-600">View Certificate</a>
+                    </div>
+                    <!-- Certification Item -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                        <div class="certification-icon"><i class="fas fa-trophy text-6xl text-green-600 mb-4"></i></div>
+                        <h2 class="text-xl font-semibold">NodeJS BootCamp</h2>
+                        <a href="Certification/NodeJS.pdf" class="btn btn-green-600">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white text-center shadow-lg animate__animated animate__fadeIn">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-indigo-600 mb-6">Contact</h1>
+                <!-- Email Contact -->
+                <div class="text-lg text-gray-700 mb-4">
+                    <p><i class="fas fa-envelope text-2xl text-indigo-600 mb-2"></i></p>
+                    <p><a href="mailto:bharathsimhareddy6666@gmail.com" class="hover:text-yellow-400">bharathsimhareddy6666@gmail.com</a></p>
+                </div>
+                <!-- LinkedIn Contact -->
+                <div class="text-lg text-gray-700 mb-4">
+                    <p><i class="fab fa-linkedin text-2xl text-indigo-600 mb-2"></i></p>
+                    <p><a href="https://www.linkedin.com/in/bharath-simha-reddy-kothapeta-2706a8205/" class="hover:text-yellow-400">LinkedIn Profile</a></p>
+                </div>
+                <!-- GitHub Contact -->
+                <div class="text-lg text-gray-700 mb-4">
+                    <p><i class="fab fa-github text-2xl text-indigo-600 mb-2"></i></p>
+                    <p><a href="https://github.com/kothapetaBharathSimhaReddy" class="hover:text-yellow-400">GitHub Profile</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-indigo-600 text-white text-center py-4">
+        <p>&copy; 2024 Bharath Simha Reddy Kothapeta. All rights reserved.</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ScrollReveal for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Toggle the mobile menu
+            $('#menu-toggle').click(function() {
+                $('#menu').toggleClass('hidden');
+            });
+
+            // Initialize ScrollReveal for animation
+            ScrollReveal().reveal('#about', { delay: 200 });
+            ScrollReveal().reveal('#skills', { delay: 200 });
+            ScrollReveal().reveal('#projects', { delay: 200 });
+            ScrollReveal().reveal('#certifications', { delay: 200 });
+            ScrollReveal().reveal('#contact', { delay: 200 });
+        });
+
+        // Smooth scroll to section
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
