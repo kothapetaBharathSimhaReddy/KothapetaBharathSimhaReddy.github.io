@@ -12,9 +12,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Animate.css for animations -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
-    <link href="Script.js" rel="Script">
 </head>
 <body class="bg-gray-50 text-gray-800 font-poppins">
     <!-- Header Section -->
@@ -24,11 +21,11 @@
             <a class="text-white text-2xl font-bold" href="#">Bharath Simha Reddy Kothapeta</a>
             <!-- Navigation Menu for larger screens -->
             <ul class="hidden md:flex space-x-6">
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#about">About</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#skills">Skills</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#projects">Projects</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#certifications">Certifications</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#contact">Contact</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#about">About</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#skills">Skills</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#projects">Projects</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#certifications">Certifications</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#contact">Contact</a></li>
             </ul>
             <!-- Menu toggle button for smaller screens -->
             <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
@@ -38,11 +35,11 @@
         <!-- Mobile Navigation Menu -->
         <div class="hidden md:hidden bg-indigo-600" id="menu">
             <ul class="flex flex-col items-center space-y-4">
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#about">About</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#skills">Skills</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#projects">Projects</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#certifications">Certifications</a></li>
-                <li><a class="text-white hover:text-yellow-400 transition duration-300" href="#contact">Contact</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#about">About</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#skills">Skills</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#projects">Projects</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#certifications">Certifications</a></li>
+                <li><a class="text-white hover:text-yellow-400" href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -63,58 +60,52 @@
                 <h1 class="text-4xl font-bold text-indigo-600 mb-6">Technical Skills</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fab fa-python text-6xl text-indigo-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">Python</h2>
-                        <p>Proficient in Python programming.</p>
+                        <p class="text-gray-700">Proficient in Python programming.</p>
                     </div>
                     <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fab fa-html5 text-6xl text-red-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">HTML</h2>
-                        <p>Skilled in creating structured web pages using HTML.</p>
+                        <p class="text-gray-700">Skilled in creating structured web pages using HTML.</p>
                     </div>
                     <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fab fa-css3-alt text-6xl text-blue-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">CSS</h2>
-                        <p>Adept in styling web pages with CSS to create visually appealing designs.</p>
+                        <p class="text-gray-700">Adept in styling web pages with CSS to create visually appealing designs.</p>
                     </div>
                     <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fab fa-java text-6xl text-yellow-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">Java</h2>
-                        <p>Beginner Level.</p>
+                        <p class="text-gray-700">Beginner Level.</p>
                     </div>
                     <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fab fa-cuttlefish text-6xl text-green-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">C</h2>
-                        <p>Intermediate Level.</p>
+                        <p class="text-gray-700">Intermediate Level.</p>
                     </div>
                     <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fas fa-microchip text-6xl text-teal-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">Embedded C</h2>
-                        <p>Skilled in Embedded C programming for microcontroller-based applications.</p>
+                        <p class="text-gray-700">Skilled in Embedded C programming for microcontroller-based applications.</p>
                     </div>
-                    <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
-                        <i class="fas fa-database text-6xl text-blue-600 mb-4"></i>
-                        <h2 class="text-xl font-semibold">MySQL</h2>
-                        <p>Experienced with MySQL database management.</p>
-                    </div>
-                    <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <!-- New Skill Item: Power BI -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fas fa-chart-bar text-6xl text-blue-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">Power BI</h2>
-                        <p>Skilled in creating interactive visualizations and business intelligence reports.</p>
+                        <p class="text-gray-700">Skilled in creating interactive visualizations and business intelligence reports.</p>
                     </div>
-                    <!-- Skill Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 skill-card">
+                    <!-- New Skill Item: Tableau -->
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <i class="fas fa-chart-line text-6xl text-blue-600 mb-4"></i>
                         <h2 class="text-xl font-semibold">Tableau</h2>
-                        <p>Proficient in data visualization and creating dashboards using Tableau.</p>
+                        <p class="text-gray-700">Proficient in data visualization and creating dashboards using Tableau.</p>
                     </div>
                 </div>
             </div>
@@ -126,22 +117,22 @@
                 <h1 class="text-4xl font-bold text-indigo-600 mb-6">Projects</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Project Item -->
-                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <h2 class="project-title text-xl font-semibold">Gesture Control Home Automation</h2>
                         <p class="project-description text-gray-700">A gesture control home automation system that enables users to control household devices with simple hand movements.</p>
                     </div>
                     <!-- Project Item -->
-                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <h2 class="project-title text-xl font-semibold">Vehicle Movement Street Light With Light Sensing ATMega</h2>
                         <p class="project-description text-gray-700">Automatic Street Light Controller Circuit using LDR and Relay.</p>
                     </div>
                     <!-- Project Item -->
-                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <h2 class="project-title text-xl font-semibold">Instagram Clone</h2>
                         <p class="project-description text-gray-700">An Instagram clone built using HTML and CSS, replicating the visual design and layout of the popular social media platform.</p>
                     </div>
                     <!-- Project Item -->
-                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="project-card p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <h2 class="project-title text-xl font-semibold">Real Estate Price Prediction</h2>
                         <p class="project-description text-gray-700">A real estate price prediction system using machine learning algorithms to forecast property prices based on various features.</p>
                     </div>
@@ -155,73 +146,73 @@
                 <h1 class="text-4xl font-bold text-indigo-600 mb-6">Certifications</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-medal text-6xl text-indigo-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Python Basics</h2>
                         <a href="Certification/Basics of Python.pdf" class="btn btn-indigo-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-trophy text-6xl text-green-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Data Analytics Workshop</h2>
                         <a href="Certification/Data Analytics WorkShop.pdf" class="btn btn-green-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-certificate text-6xl text-yellow-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Python Intermediate</h2>
                         <a href="Certification/GUVI-Python.pdf" class="btn btn-yellow-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-award text-6xl text-red-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Infosys Power Programmer</h2>
                         <a href="Certification/Infosys Power Programmer.pdf" class="btn btn-red-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-crown text-6xl text-blue-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">IOT Beginner</h2>
                         <a href="Certification/Introduction to IOT.pdf" class="btn btn-blue-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-medal text-6xl text-indigo-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">R Programming Beginner</h2>
                         <a href="Certification/Introduction to R.pdf" class="btn btn-indigo-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-trophy text-6xl text-green-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">JavaScript and React JS BootCamp</h2>
                         <a href="Certification/JS & React Js.pdf" class="btn btn-green-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-certificate text-6xl text-yellow-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Python Advanced</h2>
                         <a href="Certification/Python by Google .pdf" class="btn btn-yellow-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-award text-6xl text-red-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Data Science BootCamp</h2>
                         <a href="Certification/Python-Data Science.pdf" class="btn btn-red-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-crown text-6xl text-blue-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Machine Learning BootCamp</h2>
                         <a href="Certification/Python for Machine Learning.pdf" class="btn btn-blue-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-medal text-6xl text-indigo-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">Data Visualization Workshop</h2>
                         <a href="Certification/Python Data Visualization.pdf" class="btn btn-indigo-600">View Certificate</a>
                     </div>
                     <!-- Certification Item -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                         <div class="certification-icon"><i class="fas fa-trophy text-6xl text-green-600 mb-4"></i></div>
                         <h2 class="text-xl font-semibold">NodeJS BootCamp</h2>
                         <a href="Certification/NodeJS.pdf" class="btn btn-green-600">View Certificate</a>
@@ -262,7 +253,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- ScrollReveal for animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
-    <!-- Custom JS -->
-    <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Toggle the mobile menu
+            $('#menu-toggle').click(function() {
+                $('#menu').toggleClass('hidden');
+            });
+
+            // Initialize ScrollReveal for animation
+            ScrollReveal().reveal('#about', { delay: 200 });
+            ScrollReveal().reveal('#skills', { delay: 200 });
+            ScrollReveal().reveal('#projects', { delay: 200 });
+            ScrollReveal().reveal('#certifications', { delay: 200 });
+            ScrollReveal().reveal('#contact', { delay: 200 });
+        });
+
+        // Smooth scroll to section
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>

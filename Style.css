@@ -3,196 +3,136 @@
 
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f0f2f5;
-    color: #333;
-    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif; /* Set the font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    background-color: #f0f2f5; /* Light background color */
+    color: #333; /* Dark text color */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Utility Classes */
 .bg-indigo-600 {
-    background-color: #4c51bf;
+    background-color: #4c51bf; /* Tailwind Indigo color */
 }
 
 .text-indigo-600 {
-    color: #4c51bf;
+    color: #4c51bf; /* Tailwind Indigo color */
 }
 
 .hover\:text-yellow-400:hover {
-    color: #ecc94b;
+    color: #ecc94b; /* Tailwind Yellow color for hover effect */
 }
 
 /* Button Styles */
 .btn {
-    display: inline-block;
-    padding: 8px 16px; /* Smaller size */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for animation */
-    color: #fff;
-    font-size: 0.875rem; /* Smaller font size */
+    display: inline-block; /* Inline-block display */
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove text underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    color: #fff; /* White text color */
 }
 
 .btn-indigo-600 {
-    background-color: #4c51bf;
+    background-color: #4c51bf; /* Indigo background color */
 }
 
 .btn-indigo-600:hover {
-    background-color: #3c366b;
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #3c366b; /* Darker indigo background color for hover effect */
 }
 
 .btn-green-600 {
-    background-color: #38a169;
+    background-color: #38a169; /* Green background color */
 }
 
 .btn-green-600:hover {
-    background-color: #276749;
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #276749; /* Darker green background color for hover effect */
 }
 
 .btn-yellow-600 {
-    background-color: #d69e2e;
+    background-color: #d69e2e; /* Yellow background color */
 }
 
 .btn-yellow-600:hover {
-    background-color: #b7791f;
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #b7791f; /* Darker yellow background color for hover effect */
 }
 
 .btn-red-600 {
-    background-color: #e53e3e;
+    background-color: #e53e3e; /* Red background color */
 }
 
 .btn-red-600:hover {
-    background-color: #c53030;
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #c53030; /* Darker red background color for hover effect */
 }
 
 .btn-blue-600 {
-    background-color: #3182ce;
+    background-color: #3182ce; /* Blue background color */
 }
 
 .btn-blue-600:hover {
-    background-color: #2b6cb0;
-    transform: translateY(-3px); /* Lift effect */
+    background-color: #2b6cb0; /* Darker blue background color for hover effect */
 }
 
 /* Layout Adjustments for Fixed Navbar */
 .header, .main, .footer {
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust margin to account for fixed navbar */
 }
 
 /* Project Card Styles */
 .project-title {
-    position: relative;
-    cursor: pointer;
+    position: relative; /* Position relative for child elements */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 .project-description {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
-    max-height: 0;
-    overflow: hidden;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Smooth transition for visibility */
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflowing content */
 }
 
 .project-card:hover .project-description {
-    opacity: 1;
-    max-height: 500px;
+    opacity: 1; /* Show description on hover */
+    max-height: 500px; /* Expand to fit content */
 }
 
 /* Adding Transitions and Animations */
 .container {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition */
 }
 
 .container:hover {
-    transform: scale(1.02);
+    transform: scale(1.02); /* Slightly enlarge container on hover */
 }
 
 /* Styles for Project Cards */
 .project-card {
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    border: 2px solid transparent;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position relative for child elements */
+    background-color: #ffffff; /* White background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Light shadow */
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for movement */
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    border: 2px solid #4c51bf;
-    box-shadow: 0 0 15px rgba(76, 81, 191, 0.5);
-}
-
-/* Styles for Skill Cards */
-.skill-card {
-    border: 2px solid transparent;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card:hover {
-    transform: translateY(-10px);
-    border: 2px solid #4c51bf;
-    box-shadow: 0 0 15px rgba(76, 81, 191, 0.5);
+    transform: translateY(-10px); /* Move up slightly on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar-nav {
-        flex-direction: column;
-        display: none;
+        flex-direction: column; /* Stack navigation items vertically */
+        display: none; /* Hide navigation by default */
     }
     .navbar-nav.show {
-        display: flex;
-    }
-
-    .skill-card, .project-card {
-        margin-bottom: 20px;
+        display: flex; /* Show navigation when toggled */
     }
 }
 
 /* Enable Smooth Scrolling */
 html {
-    scroll-behavior: smooth;
-}
-
-/* Enhanced Hover Effects */
-.project-card:hover {
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-}
-
-.btn {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.btn:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.header {
-    background: linear-gradient(90deg, rgba(76, 81, 191, 1) 0%, rgba(76, 81, 191, 0.5) 100%);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-nav a:hover {
-    color: #ecc94b;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
-
-/* Section Titles */
-section h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Smooth Scroll for Navigation Links */
-nav a {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
